@@ -1,0 +1,33 @@
+@import "_mixins/font-face";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@font-face {
+  font-family: "Optima";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Optima"), url("../fonts/Optima/OPTIMA.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Optima Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Optima Italic"),
+    url("../fonts/Optima/Optima_Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Optima Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Optima Medium"),
+    url("../fonts/Optima/Optima Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Optima Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Optima Bold"), url("../fonts/Optima/OPTIMA_B.woff") format("woff");
+}
