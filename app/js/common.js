@@ -9,6 +9,24 @@ $(function () {
     dots: true,
     infinite: true,
   });
+
+  $(".btn_mnu").click(function () {
+    $(this).toggleClass("active");
+    $(".menu").toggleClass("open");
+    $(".menu__bg").toggleClass("open");
+  });
+
+  $(".menu li a").click(function () {
+    $(".menu").removeClass("open");
+    $(".menu__bg").removeClass("open");
+    $(".btn_mnu").removeClass("active");
+  });
+
+  $(".menu__bg").click(function () {
+    $(".menu").removeClass("open");
+    $(".menu__bg").removeClass("open");
+    $(".btn_mnu").removeClass("active");
+  });
 });
 
 /**

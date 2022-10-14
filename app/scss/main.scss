@@ -3,7 +3,7 @@
 @import "libs";
 
 ::placeholder {
-  color: #666;
+  color: #bdbdbd;
 }
 
 ::selection {
@@ -22,7 +22,7 @@ body {
   font-weight: 400;
   input,
   textarea {
-    border: #666 1px solid;
+    border: 1px solid #bdbdbd;
     outline: none;
     &:focus:required:invalid {
       border-color: red;
@@ -60,6 +60,15 @@ strong {
   font-weight: bold;
 }
 
+input {
+  line-height: 58px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  max-width: 322px;
+  width: 100%;
+  border-radius: 11px;
+}
+
 .title {
   font-weight: 400;
   font-size: 94px;
@@ -88,6 +97,7 @@ strong {
   min-width: 243px;
   text-align: center;
   cursor: pointer;
+  border: none;
   &:hover {
     background-color: $accent2;
     color: #fff;
@@ -104,6 +114,7 @@ strong {
 }
 
 section {
+  position: relative;
   padding: 30px 0;
 }
 
@@ -114,6 +125,7 @@ section {
 .logo {
   text-align: center;
   margin-left: 67px;
+  text-decoration: none;
 }
 
 .menu {
@@ -626,6 +638,7 @@ section {
 .office {
   padding-bottom: 182px;
   position: relative;
+  overflow-x: hidden;
   &::after {
     content: "";
     position: absolute;
@@ -747,6 +760,191 @@ section {
     &:nth-child(4n) {
       margin-right: 0;
     }
+  }
+}
+
+/*==========  About us  ==========*/
+
+.about {
+  min-height: 750px;
+  position: relative;
+  box-sizing: border-box;
+  &__content {
+    position: relative;
+    max-width: 648px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding-left: 120px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 54px;
+      left: 120px;
+      width: 550px;
+      height: 550px;
+      background: linear-gradient(178.42deg, #007eb2 1.86%, #084690 98.95%);
+      border-radius: 90px;
+      transform: rotate(45deg);
+      z-index: -1;
+    }
+  }
+  &__title {
+    font-family: "Optima";
+    font-weight: 400;
+    font-size: 94px;
+  }
+  &__desc {
+    max-width: 348px;
+    letter-spacing: 0.04em;
+  }
+  &__img {
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
+  }
+  .social-icons {
+    left: 0;
+  }
+}
+
+.health {
+  padding-top: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -150px;
+    bottom: -110px;
+    width: 226px;
+    height: 226px;
+    background: linear-gradient(178.42deg, #007eb2 1.86%, #084690 98.95%);
+    border-radius: 40px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 48px;
+    max-width: 516px;
+  }
+  .doctor__content {
+    &::after {
+      display: none;
+    }
+  }
+  &__row {
+    margin-top: -115px;
+    margin-right: 88px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    .play-circle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding-left: 120px;
+      z-index: 2;
+      cursor: pointer;
+    }
+  }
+}
+
+.smiling {
+  padding-bottom: 100px;
+  &__desc {
+    max-width: 700px;
+    letter-spacing: 0.04em;
+    margin: auto;
+    margin-bottom: 105px;
+  }
+  .title {
+    margin-bottom: 40px;
+    span {
+      display: inline-block;
+    }
+  }
+  &__row {
+    position: relative;
+  }
+  .play-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+
+.welcome {
+  padding-bottom: 108px;
+  .title {
+    max-width: 920px;
+    margin: auto;
+    margin-bottom: 150px;
+    span {
+      display: inline-block;
+    }
+  }
+  .dentist__content {
+    max-width: 392px;
+    margin-left: 46px;
+    &::before {
+      top: -300px;
+      right: -30px;
+      width: 81px;
+      height: 81px;
+      border-radius: 16px;
+    }
+  }
+  &__row {
+    max-width: 634px;
+  }
+}
+
+.visit {
+  padding-bottom: 170px;
+  &__content {
+    max-width: 392px;
+    letter-spacing: 0.04em;
+  }
+  .title {
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 48px;
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.appointment {
+  max-width: 454px;
+  background-color: #ffffff;
+  box-shadow: 5px 30px 40px rgba(22, 118, 221, 0.11);
+  border-radius: 20px;
+  padding: 60px 66px;
+  margin-left: 50px;
+  &__title {
+    font-family: "Optima";
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+  input {
+    margin-bottom: 20px;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 36px;
   }
 }
 

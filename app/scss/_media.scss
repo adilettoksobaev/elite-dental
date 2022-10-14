@@ -1,47 +1,362 @@
 @import "vars";
 
-
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
-@include media-breakpoint-down(lg) {
-	
+@media only screen and (max-width: 1200px) {
+  .main-carousel {
+    &__item {
+      min-height: 640px;
+    }
+    &__img {
+      max-width: 420px;
+      &::before {
+        width: 360px;
+        height: 360px;
+        left: 40px;
+        border-radius: 70x;
+      }
+    }
+  }
+  .title {
+    font-size: 74px;
+    margin-bottom: 56px;
+  }
+  .services {
+    justify-content: center;
+  }
+  .dentist__img {
+    max-width: 400px;
+    &::before {
+      width: 380px;
+      height: 380px;
+      border-radius: 80px;
+    }
+  }
+  .doctor__img {
+    margin-left: 60px;
+  }
+  .doctor__row::before {
+    width: 100%;
+    max-width: 490px;
+  }
+  .doctor__img-circle {
+    max-width: 300px;
+    display: block;
+    height: auto;
+    left: -110px;
+  }
+  .dentist__content::before {
+    right: 0;
+  }
+  .office::after {
+    bottom: 30px;
+    right: -200px;
+    width: 274px;
+    height: 274px;
+    border-radius: 50px;
+  }
+  .office-carousel__item img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  .office {
+    padding-bottom: 140px;
+    overflow-y: hidden;
+  }
+  .following__img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin-left: -86px;
+  }
+  .instagram {
+    justify-content: center;
+    .instagram__item {
+      margin: 12px;
+    }
+  }
 }
 
 // ≥992px
-@include media-breakpoint-down(md) {
-
+@media only screen and (max-width: 992px) {
+  .logo {
+    margin-left: 0;
+  }
+  .following .title::before {
+    right: 0;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -335px;
+    z-index: 99;
+    background: #fff;
+    max-width: 335px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+    transition: all 0.5s ease;
+    &.open {
+      right: 0;
+    }
+    &__li {
+      a {
+        display: block;
+      }
+    }
+    &__bg {
+      transition: all 0.5s ease;
+      z-index: 9;
+      &.open {
+        position: fixed;
+        background: rgba(51, 51, 51, 0.4509803922);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+  .btn_mnu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    top: 26px;
+    margin: auto;
+    transition: all 0.5s ease;
+    z-index: 999;
+    &.active {
+      .btn_row {
+        &:first-child {
+          transform: rotate(-135deg);
+          top: 6px;
+        }
+        &:last-child {
+          -webkit-transform: rotate(-225deg);
+          -ms-transform: rotate(-225deg);
+          -o-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+          top: -10px;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+      }
+    }
+    .btn_row {
+      height: 2px;
+      width: 100%;
+      margin: 3px 0;
+      background-color: $accent;
+      position: relative;
+      transition: all 0.5s;
+    }
+  }
+  .header {
+    margin: 16px;
+  }
+  .dentist .title {
+    margin-bottom: 120px;
+  }
+  .dentist__img {
+    max-width: 100%;
+    margin-bottom: 90px;
+    &::before {
+      width: 540px;
+      height: 540px;
+    }
+  }
+  .dentist {
+    padding-bottom: 100px;
+  }
+  .doctor__img-circle {
+    max-width: 350px;
+    left: 0;
+  }
+  .doctor__img {
+    margin-left: auto;
+    right: 32px;
+  }
+  .doctor__row {
+    margin-bottom: 35px;
+  }
+  .doctor__content::after {
+    bottom: -150px;
+  }
+  .office-carousel {
+    margin-bottom: 80px;
+  }
+  .office {
+    padding-bottom: 30px;
+  }
+  .following {
+    padding-bottom: 30px;
+  }
+  .main-carousel__img {
+    max-width: 100%;
+  }
+  .main-carousel__img {
+    padding: 60px;
+  }
+  .main-carousel__img::before {
+    width: 420px;
+    height: 420px;
+    top: 50px;
+    left: auto;
+    right: 50px;
+  }
+  .main-carousel__content {
+    width: 100%;
+  }
+  .main-carousel__btn-group {
+    margin-bottom: 35px;
+  }
+  .main-services {
+    padding-bottom: 70px;
+  }
+  .services-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 // ≥768px
-@include media-breakpoint-down(sm) {
-
+@media only screen and (max-width: 768px) {
 }
 
 // ≥576px
-@include media-breakpoint-down(xs) {
-
+@media only screen and (max-width: 576px) {
+  .dentist__img::before {
+    width: 250px;
+    height: 250px;
+    border-radius: 55px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  .dentist__content::before {
+    display: none;
+  }
+  .dentist__img {
+    margin-bottom: 0;
+    padding: 30px;
+  }
+  .main-carousel__img {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 75px;
+    &::before {
+      width: 230px;
+      height: 230px;
+      border-radius: 50px;
+      top: 50px;
+      left: auto;
+      right: 30px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  .main-carousel__label {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 50px;
+    margin-bottom: 36px;
+  }
+  .main-carousel .title {
+    margin-bottom: 30px;
+  }
+  .main-carousel .btn {
+    margin-bottom: 15px;
+  }
+  .main-carousel__btn-group {
+    margin-bottom: 20px;
+  }
+  .services__item {
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    &:first-child,
+    &:last-child {
+      margin-left: 12.5px;
+    }
+  }
+  .dentist .title {
+    margin-bottom: 70px;
+  }
+  .dentist {
+    padding-bottom: 200px;
+  }
+  .doctor .title {
+    margin-bottom: 20px;
+  }
+  .doctor__img {
+    right: -10px;
+    max-width: 80%;
+  }
+  .doctor__row::before {
+    width: 100%;
+    height: 690px;
+  }
+  .doctor__img-circle {
+    top: -184px;
+    left: -25px;
+  }
+  .office::after {
+    display: none;
+  }
+  .following .title::before {
+    display: none;
+  }
+  .following__img {
+    margin-left: -16px;
+  }
+  .following__row {
+    margin-bottom: 24px;
+  }
+  .instagram {
+    justify-content: center;
+  }
+  .instagram .instagram__item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-black {
+    flex-wrap: wrap;
+  }
+  .footer-icons {
+    position: relative;
+    margin-top: 16px;
+  }
 }
-
 
 /*==========  Mobile First  ==========*/
 
 // ≤576px
 @include media-breakpoint-up(sm) {
-
 }
 
 // ≤768px
 @include media-breakpoint-up(md) {
-
 }
 
 // ≤992px
 @include media-breakpoint-up(lg) {
-
 }
 
 // ≤1200px
 @include media-breakpoint-up(xl) {
-	
 }
