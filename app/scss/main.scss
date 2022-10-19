@@ -964,4 +964,39 @@ section {
   }
 }
 
+.clients {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  min-height: 725px;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #007eb2 0%, #084690 100%);
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+  &__content {
+    color: #fff;
+    max-width: 392px;
+    p {
+      margin-bottom: 24px;
+      letter-spacing: 0.04em;
+    }
+  }
+  &__row {
+    position: absolute;
+    top: -117px;
+    bottom: -117px;
+    .play-circle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 2;
+      cursor: pointer;
+    }
+  }
+}
+
 @import "media"; // Always at the end
