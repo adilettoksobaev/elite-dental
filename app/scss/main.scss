@@ -999,4 +999,73 @@ section {
   }
 }
 
+/*==========  Doctor  ==========*/
+.andre-section {
+  width: 100%;
+  background: linear-gradient(90deg, #007eb2 0%, #084690 100%);
+  position: relative;
+  margin-bottom: 120px;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../img/elite-logo.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 539px;
+  }
+}
+.andre {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__item {
+    flex: 0 0 30%;
+    max-width: 30%;
+    &:first-child {
+      margin-left: 130px;
+    }
+  }
+  &__content {
+    position: relative;
+    min-height: 690px;
+    padding-top: 15%;
+  }
+  &__title {
+    font-family: "Optima";
+    font-size: 94px;
+    max-width: 570px;
+    margin-bottom: 40px;
+  }
+  &__desc {
+    max-width: 355px;
+    letter-spacing: 0.04em;
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+  }
+  .social-icons {
+    left: -130px;
+  }
+}
+
+.doctorate {
+  .dentist__content {
+    margin-left: 40px;
+    max-width: 392px;
+    &::before {
+      top: -134px;
+      right: 160px;
+      width: 81px;
+      height: 81px;
+      border-radius: 15px;
+    }
+  }
+}
+
 @import "media"; // Always at the end
