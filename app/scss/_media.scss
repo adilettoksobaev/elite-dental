@@ -77,6 +77,14 @@
       margin: 12px;
     }
   }
+  .about__content {
+    max-width: 555px;
+    min-height: 520px;
+    &::before {
+      width: 425px;
+      height: 425px;
+    }
+  }
 }
 
 // ≥992px
@@ -230,6 +238,49 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .about__content {
+    padding-left: 0;
+    &::before {
+      left: 46px;
+    }
+  }
+  .about__img {
+    max-width: 100%;
+    right: -24px;
+    bottom: 70px;
+  }
+  .health__row {
+    margin-right: 0;
+  }
+  .doctor__content {
+    margin-top: 40px;
+  }
+  .dentist .title {
+    margin-bottom: 56px;
+  }
+  .welcome__row {
+    margin-bottom: 30px;
+  }
+  .welcome .dentist__content {
+    margin-left: 0;
+  }
+  .visit__desc {
+    margin-bottom: 30px;
+  }
+  .clients {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    min-height: auto;
+    margin-bottom: 30px;
+  }
+  .clients__row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 // ≥768px
@@ -340,6 +391,58 @@
   .footer-icons {
     position: relative;
     margin-top: 16px;
+  }
+  .about {
+    min-height: auto;
+  }
+  .about__title {
+    font-size: 74px;
+    margin-bottom: 16px;
+    text-align: left;
+    color: $accent;
+  }
+  .about__content {
+    max-width: 100%;
+    min-height: auto;
+    color: $text;
+    &::before {
+      display: none;
+    }
+  }
+  .about__img {
+    position: initial;
+  }
+  .health__row {
+    margin-top: -30px;
+  }
+  .social-icons {
+    bottom: 15px;
+    display: none;
+  }
+  .health__row .play-circle {
+    padding-left: 0;
+  }
+  .smiling__desc {
+    margin-bottom: 30px;
+  }
+  .smiling {
+    padding-bottom: 30px;
+  }
+  .welcome .title {
+    margin-bottom: 30px;
+  }
+  .welcome {
+    padding-bottom: 30px;
+  }
+  .appointment {
+    margin-left: 0;
+    padding: 30px 24px;
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+  .visit {
+    padding-bottom: 50px;
   }
 }
 
