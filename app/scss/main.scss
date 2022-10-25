@@ -1054,7 +1054,8 @@ section {
   }
 }
 
-.doctorate {
+.doctorate,
+.professional {
   .dentist__content {
     margin-left: 40px;
     max-width: 392px;
@@ -1066,6 +1067,62 @@ section {
       border-radius: 15px;
     }
   }
+}
+
+.professional {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -115px;
+    bottom: 16px;
+    width: 226px;
+    height: 226px;
+    background: -o-linear-gradient(271.58deg, #007eb2 1.86%, #084690 98.95%);
+    background: linear-gradient(178.42deg, #007eb2 1.86%, #084690 98.95%);
+    border-radius: 40px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  .dentist__content {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.dream {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/dream.jpg);
+  width: 100%;
+  min-height: 750px;
+  background-size: cover;
+  color: #fff;
+  padding: 16px;
+  padding-top: 165px;
+  position: relative;
+  .title {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  .play-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+  }
+}
+
+.greatest {
+  padding-top: 70px;
+  padding-bottom: 90px;
 }
 
 @import "media"; // Always at the end
