@@ -1128,7 +1128,8 @@ section {
 
 /*==========  Cosmetic Dentistry  ==========*/
 
-.cosmetic-dentistry {
+.cosmetic-dentistry,
+.general-dentistry {
   background: linear-gradient(
     270deg,
     #ffffff 17.78%,
@@ -1153,6 +1154,7 @@ section {
 
 .blog {
   .title {
+    max-width: 516px;
     text-align: left;
     margin-bottom: 80px;
   }
@@ -1167,13 +1169,11 @@ section {
       display: block;
     }
   }
-  &__content {
-    max-width: 342px;
-  }
   &__desc {
     letter-spacing: 0.04em;
     margin-bottom: 24px;
     line-height: 1.3;
+    max-width: 342px;
   }
 }
 .veneers {
@@ -1225,6 +1225,50 @@ section {
     }
     &__title {
       min-height: 82px;
+    }
+  }
+}
+
+/*==========  General Dentistry  ==========*/
+.general-dentistry {
+  background-image: url("../img/general.jpg");
+}
+.planing {
+  .title {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}
+.canals {
+  .title {
+    span {
+      display: inline-block;
+    }
+  }
+  .blog__content {
+    max-width: 550px;
+  }
+  .blog__desc {
+    max-width: 342px;
+  }
+}
+.advantages {
+  .title {
+    max-width: 100%;
+    text-align: center;
+    text-transform: none;
+    max-width: 967px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+  .services {
+    &__item {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__title {
+      min-height: 81px;
     }
   }
 }
