@@ -1234,6 +1234,18 @@ section {
   background-image: url("../img/general.jpg");
 }
 .planing {
+  padding-bottom: 200px;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: -150px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(178.42deg, #007eb2 1.86%, #084690 98.95%);
+    border-radius: 55px;
+    transform: rotate(45deg);
+  }
   .title {
     font-size: 48px;
     text-transform: uppercase;
@@ -1270,6 +1282,81 @@ section {
     &__title {
       min-height: 81px;
     }
+  }
+}
+
+.bridges,
+.porcelain {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  .title {
+    font-size: 48px;
+  }
+  .blog {
+    &__row {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 500px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 550px;
+        height: 550px;
+        background: linear-gradient(178.42deg, #007eb2 1.86%, #084690 98.95%);
+        border-radius: 100px;
+        transform: rotate(45deg);
+      }
+      img {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.dental-bridge {
+  .title {
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+}
+
+.surgery {
+  .title {
+    max-width: 570px;
+    span {
+      display: inline-block;
+    }
+  }
+}
+.priority {
+  padding-bottom: 150px;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(178.42deg, #007eb2 1.86%, #084690 98.95%);
+    border-radius: 70px;
+    transform: rotate(45deg);
+  }
+  .title {
+    font-size: 48px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 66px;
+    max-width: 100%;
+    span {
+      display: inline-block;
+    }
+  }
+  .blog__content {
+    padding-top: 14px;
   }
 }
 
