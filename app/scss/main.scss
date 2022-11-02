@@ -512,6 +512,7 @@ section {
     font-weight: 700;
     font-size: 24px;
     color: #333333;
+    text-transform: uppercase;
   }
   &__img {
     min-height: 185px;
@@ -1123,6 +1124,109 @@ section {
 .greatest {
   padding-top: 70px;
   padding-bottom: 90px;
+}
+
+/*==========  Cosmetic Dentistry  ==========*/
+
+.cosmetic-dentistry {
+  background: linear-gradient(
+    270deg,
+    #ffffff 17.78%,
+    rgba(255, 255, 255, 0) 61.67%
+  );
+  background-image: url(../img/cosmetic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &::before {
+    display: none;
+  }
+  .andre {
+    color: $text;
+    &__title {
+      color: $accent;
+      span {
+        color: $accent2;
+      }
+    }
+  }
+}
+
+.blog {
+  .title {
+    text-align: left;
+    margin-bottom: 80px;
+  }
+  &__row {
+    &.right {
+      display: flex;
+      justify-content: flex-end;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__content {
+    max-width: 342px;
+  }
+  &__desc {
+    letter-spacing: 0.04em;
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+}
+.veneers {
+  .title {
+    max-width: 516px;
+    font-size: 48px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .services {
+    justify-content: center;
+    &__item {
+      max-width: 217px;
+      min-height: 268px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    &__title {
+      min-height: 54px;
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    &__img {
+      min-height: auto;
+    }
+  }
+}
+
+.provide {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    right: -260px;
+    width: 490px;
+    height: 490px;
+    background: linear-gradient(178.42deg, #007eb2 1.86%, #084690 98.95%);
+    border-radius: 70px;
+    transform: rotate(45deg);
+  }
+  .title {
+    font-size: 48px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .services {
+    &__item {
+      max-width: 335px;
+    }
+    &__title {
+      min-height: 82px;
+    }
+  }
 }
 
 @import "media"; // Always at the end

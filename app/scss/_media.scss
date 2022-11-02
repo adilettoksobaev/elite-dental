@@ -85,6 +85,46 @@
       height: 425px;
     }
   }
+  .andre-section {
+    overflow-x: hidden;
+    .social-icons {
+      left: 0;
+    }
+  }
+  .andre__item:first-child {
+    margin-left: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .andre__img {
+    max-width: 600px;
+    height: auto;
+    display: block;
+  }
+  .andre__title {
+    font-size: 74px;
+  }
+  .provide {
+    &::before {
+      display: none;
+    }
+  }
+  .cosmetic-dentistry {
+    margin-bottom: 30px;
+  }
+  .blog {
+    .title {
+      margin-bottom: 30px;
+    }
+    &__content {
+      margin-bottom: 30px;
+    }
+  }
+  .provide {
+    .services__item:first-child {
+      margin-left: 12.5px;
+    }
+  }
 }
 
 // ≥992px
@@ -281,6 +321,16 @@
     top: 0;
     bottom: 0;
   }
+  .dream {
+    padding-top: 50px;
+  }
+  .professional {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .welcome__row {
+      margin-top: 20px;
+    }
+  }
 }
 
 // ≥768px
@@ -443,6 +493,50 @@
   }
   .visit {
     padding-bottom: 50px;
+  }
+  .andre__item:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .andre__content {
+    min-height: auto;
+  }
+  .andre__img {
+    position: initial;
+  }
+  .andre-section {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .doctorate {
+    padding-bottom: 30px;
+  }
+  .dream {
+    min-height: 500px;
+  }
+  .professional,
+  .greatest {
+    padding-bottom: 30px;
+    .dentist__content {
+      margin-left: 0;
+    }
+  }
+  .cosmetic-dentistry {
+    overflow-x: initial;
+    padding-bottom: 30px;
+    .andre__title {
+      font-size: 50px;
+      margin-bottom: 30px;
+    }
+  }
+  .veneers .title,
+  .provide .title {
+    font-size: 31px;
+  }
+  .provide {
+    .services__title {
+      font-size: 20px;
+    }
   }
 }
 
