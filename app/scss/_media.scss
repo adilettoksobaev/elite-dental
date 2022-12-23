@@ -427,6 +427,10 @@
   .dentist {
     padding-bottom: 200px;
   }
+  .doctor {
+    margin-top: 100px;
+    padding-bottom: 0;
+  }
   .doctor .title {
     margin-bottom: 20px;
   }
@@ -441,6 +445,10 @@
   .doctor__img-circle {
     top: -184px;
     left: -25px;
+  }
+  .virtual-tour,
+  .video-section {
+    padding-bottom: 24px;
   }
   .office::after {
     display: none;
