@@ -1217,7 +1217,9 @@ section {
   &__content {
     position: relative;
     min-height: 690px;
-    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   &__title {
     font-family: "Optima";
@@ -1228,6 +1230,7 @@ section {
   &__desc {
     max-width: 355px;
     letter-spacing: 0.04em;
+    margin-bottom: 15px;
   }
   &__img {
     position: absolute;
@@ -1550,6 +1553,83 @@ section {
   .blog__content {
     padding-top: 14px;
   }
+}
+
+/*==========  Cosmetic Dentistry  ==========*/
+.bonding {
+  background-image: url(../img/bonding.jpg);
+  .andre__title {
+    font-size: 64px;
+  }
+  .andre__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.process {
+  padding-bottom: 150px;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  .dentist__content {
+    max-width: 342px;
+  }
+  .dentist__img {
+    &.center {
+      &::before {
+        top: -90px;
+        z-index: -1;
+      }
+    }
+  }
+}
+.durability {
+  background-image: url(../img/durability.jpg);
+}
+
+.bone {
+  background-image: url(../img/bone.jpg);
+}
+.problems {
+  background-image: url(../img/problems.jpg);
+}
+
+.bridges-smile {
+  background-image: url(../img/bridges-smile.jpg);
+}
+
+.stands {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -250px;
+    left: -150px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(178.42deg, #007eb2 1.86%, #084690 98.95%);
+    border-radius: 55px;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+  .title {
+    text-align: center;
+    max-width: 100%;
+    font-size: 48px;
+    span {
+      display: inline-block;
+    }
+  }
+}
+.someone {
+  padding-bottom: 100px;
+  &::before {
+    display: none;
+  }
+}
+
+.crown {
+  background-image: url(../img/crown.jpg);
 }
 
 @import "media"; // Always at the end

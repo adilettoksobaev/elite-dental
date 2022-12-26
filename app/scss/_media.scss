@@ -140,6 +140,9 @@
     height: 300px;
     border-radius: 50px;
   }
+  .stands::before {
+    display: none;
+  }
 }
 
 // ≥992px
@@ -611,6 +614,24 @@
   }
   .priority::before {
     display: none;
+  }
+
+  .process .dentist__img.center {
+    margin-top: 30px;
+    &::before {
+      top: 0;
+    }
+  }
+  .process {
+    padding-bottom: 30px;
+    min-height: 700px;
+    align-items: flex-start;
+  }
+  .welcome .dentist__content {
+    margin-top: 0;
+  }
+  .someone {
+    padding-bottom: 30px;
   }
 }
 
