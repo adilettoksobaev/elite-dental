@@ -360,6 +360,19 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .blog-content .dentist__content {
+    padding-top: 30px;
+    padding-left: 0;
+  }
+  .blog-bottom-section::before {
+    display: none;
+  }
+
+  .blog-content,
+  .blog-bottom-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 // ≥768px
@@ -543,6 +556,8 @@
   }
   .andre-section {
     padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-bottom: 30px;
   }
   .doctorate {
@@ -622,16 +637,69 @@
       top: 0;
     }
   }
-  .process {
+  .process,
+  .however {
     padding-bottom: 30px;
-    min-height: 700px;
+    min-height: auto;
     align-items: flex-start;
+    .dentist__content {
+      margin-top: 0px;
+    }
   }
   .welcome .dentist__content {
     margin-top: 0;
   }
-  .someone {
+  .someone,
+  .blog {
     padding-bottom: 30px;
+    .dentist__img {
+      margin-top: 30px;
+    }
+  }
+  .supported {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .pleased .center {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .extraction {
+    padding-bottom: 30px;
+    .title {
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+    &__item {
+      min-height: 300px;
+    }
+  }
+  .different,
+  .everything,
+  .sinus-blog,
+  .blog-main {
+    padding-bottom: 30px;
+  }
+  .tooth-common {
+    .title {
+      margin-top: 30px;
+    }
+  }
+  .blog-card {
+    min-height: 300px;
+  }
+  .blog-main {
+    padding-top: 30px;
+  }
+  .blog-section {
+    min-height: 360px;
+  }
+  .blog-item-section {
+    min-height: 350px;
+    .title {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
   }
 }
 

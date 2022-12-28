@@ -1223,7 +1223,7 @@ section {
   }
   &__title {
     font-family: "Optima";
-    font-size: 94px;
+    font-size: 84px;
     max-width: 570px;
     margin-bottom: 40px;
   }
@@ -1327,9 +1327,9 @@ section {
   .andre {
     color: $text;
     &__title {
-      color: $accent;
+      color: $accent2;
       span {
-        color: $accent2;
+        color: $accent;
       }
     }
   }
@@ -1630,6 +1630,342 @@ section {
 
 .crown {
   background-image: url(../img/crown.jpg);
+}
+
+.dental-cronwns {
+  background-image: url(../img/dental.jpg);
+}
+
+.types {
+  padding-bottom: 160px;
+  .title {
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.deep-cleaning {
+  .andre__title {
+    font-size: 64px;
+  }
+}
+
+.deep-cleaning {
+  background-image: url(../img/deep-cleaning.jpg);
+}
+
+.however {
+  min-height: 790px;
+  background-image: url(../img/however.jpg);
+  display: flex;
+  align-items: center;
+  .dentist__content {
+    max-width: 342px;
+    margin-top: 100px;
+    &::before {
+      top: -135px;
+      z-index: 1;
+    }
+  }
+}
+
+.dental-implants {
+  background-image: url(../img/dental-implants.jpg);
+  margin-bottom: 60px;
+}
+
+.pleased {
+  .title {
+    font-size: 48px;
+    margin-bottom: 61px;
+  }
+  .center {
+    max-width: 926px;
+    margin: 60px auto;
+  }
+}
+
+.immediate,
+.supported {
+  .title {
+    max-width: 550px;
+    font-size: 48px;
+  }
+  .blog__desc {
+    max-width: 342px;
+  }
+  ul {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.supported {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.extraction {
+  padding-bottom: 150px;
+  .title {
+    max-width: 1079px;
+    font-size: 48px;
+    margin: auto;
+    margin-bottom: 65px;
+    span {
+      display: inline-block;
+    }
+    &.common {
+      margin-top: 70px;
+    }
+  }
+  &__item {
+    width: 100%;
+    min-height: 399px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &__desc {
+    max-width: 273px;
+    margin-bottom: 0;
+  }
+}
+
+.dentures {
+  background-image: url(../img/dentures.jpg);
+}
+
+.different {
+  padding-bottom: 100px;
+}
+
+.gum-contouring {
+  background-image: url(../img/gum-contouring.jpg);
+}
+
+.increases {
+  background-image: url(../img/increases.jpg);
+}
+
+.inlays-onlays {
+  background-image: url(../img/inlays-onlays.jpg);
+}
+
+.oral-sedation {
+  background-image: url(../img/oral-sedation.jpg);
+}
+
+.everything {
+  padding-bottom: 100px;
+  .dentist__content {
+    max-width: 342px;
+  }
+}
+
+.porcelain-veneers {
+  background-image: url(../img/porcelain-veneers.jpg);
+}
+
+.prophylaxis {
+  background-image: url(../img/prophylaxis.jpg);
+  .andre__title {
+    color: $accent2;
+    span {
+      font-size: 64px;
+      color: $accent;
+    }
+  }
+}
+
+.ridge-augmentation {
+  background-image: url(../img/ridge-augmentation.jpg);
+}
+
+.root-canal {
+  background-image: url(../img/root-canal.jpg);
+}
+
+.sinus-left {
+  background-image: url(../img/sinus-left.jpg);
+}
+
+.sinus-blog {
+  padding-bottom: 100px;
+}
+
+.teeth-whitening {
+  background-image: url(../img/teeth-whitening.jpg);
+}
+
+.philips {
+  .title {
+    max-width: 545px;
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.tooth-extraction {
+  background-image: url(../img/tooth-extraction.jpg);
+}
+.tooth-common {
+  padding-bottom: 30px;
+  .title {
+    margin-top: 70px;
+  }
+}
+
+.wisdom-tooth {
+  background-image: url(../img/wisdom-tooth.jpg);
+}
+
+.all-on-4 {
+  background-image: url(../img/all-on-4.jpg);
+}
+.blog-section {
+  background-image: url(../img/blog-section.jpg);
+  width: 100%;
+  min-height: 750px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .social-icons {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    z-index: 1;
+  }
+}
+
+.blog-main {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .title {
+    text-align: center;
+  }
+}
+
+.blog-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 330px;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  color: #fff;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 45.15%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
+  &__content {
+    max-width: 273px;
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    font-family: "Optima";
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.blog-item-section {
+  background-image: url(../img/blog-item-section.jpg);
+  width: 100%;
+  min-height: 750px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 45.15%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
+  &__content {
+    max-width: 740px;
+    margin: auto;
+    p {
+      line-height: 1.5;
+      margin-bottom: 1.5em;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  .title {
+    font-family: "Optima";
+    text-align: left;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+}
+.blog-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .dentist__content {
+    max-width: 392px;
+    padding-left: 70px;
+  }
+}
+
+.blog-bottom-section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -150px;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(178.42deg, #007eb2 1.86%, #084690 98.95%);
+    border-radius: 55px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
 }
 
 @import "media"; // Always at the end
