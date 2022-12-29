@@ -167,6 +167,8 @@
     justify-content: flex-start;
     padding: 16px;
     transition: all 0.5s ease;
+    overflow: auto;
+    flex-wrap: nowrap;
     &.open {
       right: 0;
     }
@@ -186,6 +188,14 @@
         left: 0;
         top: 0;
       }
+    }
+    &__dropdown {
+      opacity: 1;
+      visibility: visible;
+      position: inherit;
+      box-shadow: none;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
   .btn_mnu {
